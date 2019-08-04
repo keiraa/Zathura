@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity"
+    android:background="@drawable/b5"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="160dp"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:id="@+id/question"
+            android:text="Here Goes the Question"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-condensed"
+            style="@style/Platform.MaterialComponents"
+            android:gravity="center"
+            android:textSize="28sp"
+            app:autoSizeMinTextSize="15sp"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMaxTextSize="28sp"
+            android:padding="10dp"
+            android:background="@drawable/back"
+            android:shadowColor="@color/black"
+            android:layout_margin="20dp"/>
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:alignmentMode="alignMargins"
+            >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:id="@+id/op1"
+            android:padding="5dp"
+            android:text="Option A"
+            android:onClick="optionsubmit"
+            android:ems="5"
+            android:textColor="@color/white"
+            android:textSize="23dp"
+            android:gravity="center"
+            app:autoSizeMinTextSize="1sp"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMaxTextSize="23sp"
+            android:background="@drawable/back"
+            style="@style/Platform.MaterialComponents"
+            android:layout_marginBottom="20dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:id="@+id/op2"
+            android:text="Option B"
+            android:onClick="optionsubmit"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:ems="5"
+            android:textSize="23sp"
+            app:autoSizeMinTextSize="1sp"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMaxTextSize="23sp"
+            android:gravity="center"
+            android:background="@drawable/back"
+            style="@style/Platform.MaterialComponents"
+            android:layout_marginStart="30dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:id="@+id/op3"
+            android:text="Option C"
+            android:onClick="optionsubmit"
+            android:ems="5"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            app:autoSizeMinTextSize="1sp"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMaxTextSize="23sp"
+            android:textSize="23sp"
+            android:gravity="center"
+            android:background="@drawable/back"
+            style="@style/Platform.MaterialComponents"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:id="@+id/op4"
+            android:text="Option D"
+            android:onClick="optionsubmit"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:ems="5"
+            android:maxLength="20"
+            android:textSize="23sp"
+            android:gravity="center"
+            app:autoSizeMinTextSize="1sp"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMaxTextSize="23sp"
+            android:background="@drawable/back"
+            style="@style/Platform.MaterialComponents"
+            android:layout_marginStart="30dp"/>
+
+    </GridLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
