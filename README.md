@@ -1,2 +1,2 @@
 # Zathura
-Online Space Quiz Application
+Online Space Quiz Application for Android
